@@ -7,6 +7,10 @@ const FetchNews = () => {
     const [countryText, setCountryText] = useState('')
     const [newsList, setNewsList] = useState([])
 
+   /**
+    * The function fetches news from the newsapi.org API and sets the newsList state to the
+    * response.data.articles
+    */
     const fetchNews = () => {
         axios.get(`https://newsapi.org/v2/top-headlines?country=${selectCountry}&apiKey=5a4603dfc46e429d85d57f45dcf5a4e5`)
             .then((response => {
@@ -64,6 +68,8 @@ const FetchNews = () => {
                 </div>
             </div>
 
+          
+          
             {selectCountry ?
                 <div className="container">
                     <p className='bg-light p-2'>Home<i class="bi bi-caret-right-fill"></i>{countryText}</p>

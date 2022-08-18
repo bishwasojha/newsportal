@@ -1,0 +1,13 @@
+.header {
+    padding: 20px;
+    background: rgb(126, 150, 129);
+}
+
+.click-btn {
+
+}
+
+.select-btn {
+   color: rgb(253, 255, 255);
+   font-size: bold;
+}
